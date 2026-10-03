@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+.insights-html-content ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.insights-html-content li {
+  position: relative;
+  padding-left: 1.5rem;
+  line-height: 1.5;
+}
+
+.insights-html-content li::before {
+  content: "✦";
+  position: absolute;
+  left: 0.25rem;
+  top: 0;
+  color: #38bdf8;
+  font-size: 0.75rem;
+  line-height: 1.5;
+}
